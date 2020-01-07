@@ -1,0 +1,17 @@
+<div class="wrap-sugg-books">
+    <div class="hdr-sugg-books-content">
+        <div class="hdr-tittle">
+            <a href="#">Gợi ý dành riêng cho bạn</a>
+        </div>
+        <ul class="hrd-menu-sugg-books">
+            <li><a (click)="OnGotoAllSuggestionsBook()">Tất cả</a></li>
+            <li><a (click)="OnGotoAllLiteratureBook()">Văn học</a></li>
+            <li><a (click)="OnGotoAllEconomicsBook()">Kinh tế</a></li>
+            <li><a (click)="OnGotoAllChildrenBook()">Thiếu nhi</a></li>
+            <li><a (click)="OnGotoAllBook()">Kĩ năng sống</a></li>
+        </ul>
+    </div>
+    <app-all-suggestions-book *ngIf="isActiviteAllSgtBook"></app-all-suggestions-book>
+    <app-sgt-literature-books *ngIf="isActiviteSgtLiteratureBook"></app-sgt-literature-books>
+    <app-sgt-economics-books *ngIf="isActiviteSgtEconomicsBook"></app-sgt-economics-books>
+</div>

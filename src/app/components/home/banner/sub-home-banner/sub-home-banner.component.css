@@ -1,0 +1,11 @@
+.list-banner{
+    display: flex;
+
+}
+img{
+    width: 300px;
+    height: auto;
+}
+.item{
+    padding: 5px;
+}

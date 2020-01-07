@@ -1,0 +1,21 @@
+.main-top-content{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.main-top-banner{
+    margin-left: 5px;
+}
+.main-top-sub-banner{
+    float: left;
+}
+.main-top-sub-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
