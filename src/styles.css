@@ -28,3 +28,58 @@ h1, h2, h3, h4, h5, h6, p, small, strong, b, i {
     vertical-align: baseline;
     background: transparent;
 }
+
+.tittle{
+    padding: 10px 20px;
+    border-bottom: 2px solid #f8f6f0;
+    text-transform: uppercase;
+}
+.list-books{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    display: inline-block;
+    padding: 12px 10px;
+    text-align: center;
+    margin: 10px 5px;
+}
+
+.item:hover{
+    box-shadow: 0px 4px 3px #878787;
+}
+
+.item:hover .item-name{
+    color: royalblue;
+}
+.item-name{
+    color: #333333;
+    font-weight: normal;
+    font-size: 18px;
+    display: block;
+    padding-top: 5px;
+    height: 2.5em;
+}
+
+.item-old-price{
+    color: #888888;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+.item-old-price > span{
+    border-top: 10px;
+}
+.item-new-price > span{
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.item-price{
+    display: flex;
+    justify-content:center;
+    flex-direction: column-reverse;
+    align-items: center;
+}

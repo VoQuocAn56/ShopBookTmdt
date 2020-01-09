@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 //import { AllSuggestionsBookComponent } from './all-suggestions-book/all-suggestions-book.component';
 //import {SgtEconomicsBooksComponent} from'./sgt-economics-books/sgt-economics-books.component';
 //import {SgtLiteratureBooksComponent} from './sgt-literature-books/sgt-literature-books.component';
-import {Routes, RouterModule} from '@angular/router'
+import {Routes, RouterModule} from '@angular/router';
+import { ListSuggestionsBookComponent } from './list-suggestions-book/list-suggestions-book.component'
 
 /*
 const routes: Routes =[
@@ -22,7 +23,7 @@ const routes: Routes =[
     //AllSuggestionsBookComponent,
     //SgtEconomicsBooksComponent,
     //SgtLiteratureBooksComponent
-  ],
+  ListSuggestionsBookComponent],
   imports: [
     CommonModule,
     //RouterModule.forChild(routes)

@@ -1,0 +1,17 @@
+.wrap-economics-books{
+    width: 100%; 
+    margin-top: 10px;
+}
+
+.economics-books-content{
+    background-color: white;
+    width: 81%;
+    margin: 0 auto;
+}
+
+.list-books{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

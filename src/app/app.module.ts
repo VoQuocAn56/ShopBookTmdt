@@ -13,10 +13,10 @@ import { BooksComponent } from './components/books/books.component';
 import { SaleBooksComponent } from './components/books/sale-books/sale-books.component';
 import { HotBooksComponent} from './components/books/hot-books/hot-books.component';
 import { SuggestionsBookComponent } from './components/books/suggestions-book/suggestions-book.component';
+import {ListSuggestionsBookComponent} from './components/books/suggestions-book/list-suggestions-book/list-suggestions-book.component';
+import { EconomicsBookComponent } from './components/books/economics-book/economics-book.component';
+import { DetailBookComponent } from './components/books/detail-book/detail-book.component';
 
-import {AllSuggestionsBookComponent} from './components/books/suggestions-book/all-suggestions-book/all-suggestions-book.component';
-import {SgtEconomicsBooksComponent} from './components/books/suggestions-book/sgt-economics-books/sgt-economics-books.component';
-import {SgtLiteratureBooksComponent} from './components/books/suggestions-book/sgt-literature-books/sgt-literature-books.component'
 
 @NgModule({
   declarations: [
@@ -33,13 +33,18 @@ import {SgtLiteratureBooksComponent} from './components/books/suggestions-book/s
     SaleBooksComponent,
     SuggestionsBookComponent,
 
-    AllSuggestionsBookComponent,
-    SgtEconomicsBooksComponent,
-    SgtLiteratureBooksComponent
+    ListSuggestionsBookComponent,
+
+    EconomicsBookComponent,
+
+    DetailBookComponent,
+
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

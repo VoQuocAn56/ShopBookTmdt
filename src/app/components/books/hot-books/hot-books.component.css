@@ -1,8 +1,16 @@
 .wrap-hot-books{
-    width: 100%;
+    width: 100%; 
+    margin-top: 10px;
 }
+
 .hot-books-content{
-    width: 80%;
-    margin: 0 auto;
     background-color: white;
+    width: 81%;
+    margin: 0 auto;
+}
+
+.list-hot-books{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

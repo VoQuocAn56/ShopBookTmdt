@@ -3,10 +3,10 @@
         <div class="tittle">
             <h2>Giảm giá</h2>
         </div>
-        <div class="list-sale-books">
-            <div class="item">
-                <div class="item-img ">
-                    <img src="../../../../assets/Book/8935250700801.jpg" width="180px" height="auto">
+        <div class="list-books">
+            <a (click)="OnGotoDetailBook()" class="item" *ngFor="let item of listFakeSaleBook">
+                <div class="item-img">
+                    <img src="../../../../assets/Book/8935250700801.jpg" width="165px" height="auto">
                 </div>
                 <div class="item-name">
                     <a>sword art online</a>
@@ -19,72 +19,9 @@
                         <span>70.000đ</span>
                     </div>
                 </div>   
-            </div>
-            <div class="item">
-                <div class="item-img ">
-                    <img src="../../../../assets/Book/8935250700801.jpg" width="180px" height="auto">
-                </div>
-                <div class="item-name">
-                    <a>sword art online</a>
-                </div>
-                <div class="item-price">
-                    <div class="item-new-price">
-                        <span>50.000đ</span>
-                    </div>
-                    <div class="item-old-price">
-                        <span>70.000đ</span>
-                    </div>
-                </div>   
-            </div>
-            <div class="item">
-                <div class="item-img ">
-                    <img src="../../../../assets/Book/8935250700801.jpg" width="180px" height="auto">
-                </div>
-                <div class="item-name">
-                    <a>sword art online</a>
-                </div>
-                <div class="item-price">
-                    <div class="item-new-price">
-                        <span>50.000đ</span>
-                    </div>
-                    <div class="item-old-price">
-                        <span>70.000đ</span>
-                    </div>
-                </div>   
-            </div>
-            <div class="item">
-                <div class="item-img ">
-                    <img src="../../../../assets/Book/8935250700801.jpg" width="180px" height="auto">
-                </div>
-                <div class="item-name">
-                    <a>sword art online</a>
-                </div>
-                <div class="item-price">
-                    <div class="item-new-price">
-                        <span>50.000đ</span>
-                    </div>
-                    <div class="item-old-price">
-                        <span>70.000đ</span>
-                    </div>
-                </div>   
-            </div>
-            <div class="item">
-                <div class="item-img ">
-                    <img src="../../../../assets/Book/8935250700801.jpg" width="180px" height="auto">
-                </div>
-                <div class="item-name">
-                    <a>sword art online</a>
-                </div>
-                <div class="item-price">
-                    <div class="item-new-price">
-                        <span>50.000đ</span>
-                    </div>
-                    <div class="item-old-price">
-                        <span>70.000đ</span>
-                    </div>
-                </div>   
-            </div>
+            </a>
         </div>
     </div>
+
 </div>
 
