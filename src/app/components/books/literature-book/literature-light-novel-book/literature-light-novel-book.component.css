@@ -1,0 +1,12 @@
+a{
+    width: 182px;
+}
+.contetn-top {
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 2px solid #f8f6f0 !important;
+}
+.link-more-book a{
+   line-height: 49.2px;
+   margin-right: 20px;
+}

@@ -5,6 +5,7 @@ import {DetailEconomicsBookComponent} from './detail-economics-book/detail-econo
 import {ListEconomicsBookComponent} from './list-economics-book/list-economics-book.component';
 import {MenuTagCategoryEconomicsComponent} from './menu-tag-category-economics/menu-tag-category-economics.component';
 import {HomeEconomicsBookComponent} from './home-economics-book.component';
+import {SuggestionsEconomicsBookComponent} from './suggestions-economics-book/suggestions-economics-book.component';
 import {Routes, RouterModule} from '@angular/router';
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
     DetailEconomicsBookComponent,
     ListEconomicsBookComponent,
     MenuTagCategoryEconomicsComponent,
+    SuggestionsEconomicsBookComponent
   ],
   imports: [
     CommonModule,

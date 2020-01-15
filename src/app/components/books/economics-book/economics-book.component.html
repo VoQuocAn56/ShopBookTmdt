@@ -4,7 +4,7 @@
             <h2>Sách kinh tế</h2>
         </div>
         <div class="list-books">
-            <a class="item" *ngFor="let item of listFakeEconomics">
+            <a class="item" *ngFor="let item of listFakeEconomics" (click)="OnGoToHomeEconomics()">
                 <div class="item-img">
                     <img src="../../../../assets/Book/8935250700801.jpg" width="165px" height="auto">
                 </div>

@@ -28,10 +28,45 @@ h1, h2, h3, h4, h5, h6, p, small, strong, b, i {
     vertical-align: baseline;
     background: transparent;
 }
+/*-------------*/
+.wrap-books{
+    width: 100%; 
+    margin-top: 10px;
+}
+.books-content{
+    background-color: white;
+    width: 81%;
+    margin: 0 auto;
+}
+.contetn-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f8f6f0;
+ }
 
+ .link-more-book a{
+    line-height: 49.2px;
+    margin-right: 20px;
+    cursor: pointer;
+ }
+ .link-more-book a:hover{
+    color: #ff9800;
+ }
+
+ .contetn-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f8f6f0 !important;
+ }
+
+ .link-more-book a{
+    line-height: 49.2px;
+    margin-right: 20px;
+ }
+ 
 .tittle{
     padding: 10px 20px;
-    border-bottom: 2px solid #f8f6f0;
+
     text-transform: uppercase;
 }
 .list-books{
@@ -62,6 +97,8 @@ h1, h2, h3, h4, h5, h6, p, small, strong, b, i {
     display: block;
     padding-top: 5px;
     height: 2.5em;
+    font-size: 12px;
+
 }
 
 .item-old-price{
@@ -82,4 +119,5 @@ h1, h2, h3, h4, h5, h6, p, small, strong, b, i {
     justify-content:center;
     flex-direction: column-reverse;
     align-items: center;
+    margin-top: 20px;
 }

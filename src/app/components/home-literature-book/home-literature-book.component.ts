@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {Router, ActivatedRoute, ParamMap} from '@angular/router';
+import {BookService} from './../../service/Book/Book.service';
+import {ParamQueryCategory} from './../../Common/ParamQuery/V1/ParamQueryCategory';
+import {Book} from './../../model/Book';
+
 
 @Component({
   selector: 'app-home-literature-book',
@@ -7,9 +12,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeLiteratureBookComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor(
+    private router:Router, 
+    private activatedRoute:ActivatedRoute, 
+  ) { }
 
   ngOnInit() {
-  }
 
+  }
+  
+  
 }

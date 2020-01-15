@@ -1,24 +1,31 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadingStrategy, PreloadAllModules } from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
-import { DetailBookComponent } from './components/books/detail-book/detail-book.component';
 import { HomeLiteratureBookComponent } from './components/home-literature-book/home-literature-book.component';
+import {PathRoutes} from './contracts/PathRoutes';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/home',pathMatch:'full'},
-  {path:'home',component:HomeComponent},
+  {path:'',redirectTo: PathRoutes.RedirectToHome ,pathMatch:'full'},
+  {path: PathRoutes.Home,component:HomeComponent},
+
   {
-    path:'sach-van-hoc',
+    path: PathRoutes.HomeLiterature,
     loadChildren:() => import('./components/home-literature-book/literature-routing.module').then(m => m.LiteratureRoutingModule)
   },
   {
-    path:'sach-kinh-te',
+    path: PathRoutes.HomeLiteratureByBookCategory,
+    loadChildren:() => import('./components/home-literature-book/literature-routing.module').then(m => m.LiteratureRoutingModule)
+  },
+  {
+    path: PathRoutes.HomeEconomics,
     loadChildren:() => import('./components/home-economics-book/economics-routing.module').then(m => m.EconomicsRoutingModule)
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,
+        {scrollPositionRestoration:'enabled', preloadingStrategy:PreloadAllModules},
+        )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

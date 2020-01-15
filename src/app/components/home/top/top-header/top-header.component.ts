@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router, ActivatedRoute} from '@angular/router';
+import {PathRoutes} from '../../../../contracts/PathRoutes';
 
 @Component({
   selector: 'app-top-header',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router, private activatedRoute:ActivatedRoute) { }
 
   ngOnInit() {
   }
 
+  OnGoToHome(){
+    this.router.navigate(['../'+PathRoutes.Home], {relativeTo:this.activatedRoute}) 
+  }
 }

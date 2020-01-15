@@ -1,0 +1,42 @@
+.wrap-home-category-book{
+    width: 290px;
+   
+}
+.home-category-book-content{
+    width: 300px;
+    padding: 6px;
+    background-color: white;
+}
+.category-content{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.tag-category{
+    margin: 10px 0; 
+    padding-bottom: 11.4px;/*5px*/
+    border-bottom: 1px solid #888686 ;
+}
+.tag-category a{
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: black;
+    margin-left: 10px;
+}
+.list-category {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.list-category li{
+    margin-top: 3px;
+    margin: 0 0 7px 10px;
+    font-size: 15px;
+}
+
+.list-category li a{
+    color: #747474;
+}
+

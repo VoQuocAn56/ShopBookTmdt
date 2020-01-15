@@ -1,0 +1,46 @@
+.wrap-s-book{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.menu-tag-category{
+    display: inline;
+}
+.category-literature{
+    margin-right: 5px;
+}
+.s-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.s-book-content{
+    width: 950px;
+    background-color: white;  
+    margin-left: 10px; 
+}
+
+.s-item{
+    display: inline-block;
+    padding: 12px 10px;
+    text-align: center;
+    margin: 20px 2px;
+}
+.s-tittle > h3{
+    text-align: center;
+    margin: 15px 0;
+    padding-bottom: 2px;
+    font-size: 25px;
+    border-bottom: 1px solid #888686;
+}
+
+.list-books{
+    margin-bottom: 20px;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+
+    border: 5px solid #e8e8e8;
+    width: 100%;
+}

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Router, ActivatedRoute} from '@angular/router';
+import {Router, ActivatedRoute, ParamMap} from '@angular/router';
+import {BookService} from '../../../service/Book/Book.service';
+import {ParamQueryCategory} from '../../../Common/ParamQuery/V1/ParamQueryCategory';
+import {Book} from '../../../model/Book';
 
 @Component({
   selector: 'app-list-literature-books',
@@ -8,15 +11,46 @@ import {Router, ActivatedRoute} from '@angular/router';
 })
 export class ListLiteratureBooksComponent implements OnInit {
 
-  listFakeEconomics:any = [1,2,3,4,5,6,1,2,3,4,5,6,7,8,9]
+  ListBooks:Book[];
+  ListSuggestBook:Book[];
+  NameCategory:string;
 
-  constructor(private router:Router, private activatedRoute:ActivatedRoute) { }
+  constructor(
+    private router:Router, 
+    private activatedRoute:ActivatedRoute, 
+    private bookService:BookService
+  ) { }
 
   ngOnInit() {
-  
+    this.activatedRoute.paramMap.subscribe((params: ParamMap) => {
+      this.NameCategory = params.get('name');
+    
+    })
+    console.log(this.NameCategory);
+    if(this.NameCategory == 'romatic'){
+      this.GetBookByCategoryId(ParamQueryCategory.RomanticId);
+    }else{
+      this.GetBookByCategoryId(ParamQueryCategory.LightNovelId);
+    }
+
+    this.GetSuggestBook(ParamQueryCategory.RomanticId)
   }
 
-  OnGotoDetailBook(){
-    this.router.navigate(['./detail',1],{relativeTo:this.activatedRoute});
+  OnGotoDetailBook(book:Book){
+    this.router.navigate(['../chitiet',book.bookId],{relativeTo:this.activatedRoute});
+  }
+
+  GetBookByCategoryId(Id:string){
+    this.bookService.GetBookByCategoryId(Id).subscribe((data)=>{
+      this.ListBooks = data;
+      console.log(this.ListBooks);
+    })
+  }
+
+  GetSuggestBook(Id:string){
+    this.bookService.GetBookByCategoryId(Id).subscribe((data)=>{
+      this.ListSuggestBook = data;
+      console.log(this.ListBooks);
+    })
   }
 }

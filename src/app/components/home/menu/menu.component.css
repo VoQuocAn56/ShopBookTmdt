@@ -1,46 +1,46 @@
-.menu-title{
+.m-menu-title{
     padding: 12px 20px;
     background-color: #F7941E;
     width: 300px;
     text-align: center;
 }
-.menu-title h3{
+.m-menu-title h3{
     color: white;
     font-size: 16px;
 }
-.menu-list-items{
+.m-menu-list-items{
    background-color: white;
    width: 300px;
 }
-.item{
+.m-item{
     padding: 12px 20px;
     border-bottom: whitesmoke;
     display: flex;
     position: relative;
 }
-.item a{
+.m-item a{
     color: #444;
 }
-.sub-item{
+.m-sub-item{
     display: none;
     background-color: white;
     width: 150px;
     
 }
-.sub-item__txt{
+.m-sub-item__txt{
     padding: 12px 20px;
     border-bottom: whitesmoke;
 }
 
-.item:hover{
+.m-item:hover{
     background: #FCDAB0;
 }
 
-.sub-item__txt:hover{
+.m-sub-item__txt:hover{
     background: #FCDAB0;
 }
 
-.item:hover .sub-item{
+.m-item:hover .m-sub-item{
     display: block;
     position: absolute;
     left: 301px;

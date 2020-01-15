@@ -1,0 +1,64 @@
+.tag-ctgr-menu{
+    width: 100%;
+    background-color: white;
+   
+}
+.menu-content{
+    padding: 12px 20px;
+    background-color: #F7941E;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    margin-left: 132px;
+}
+.menu-content h3{
+    color: white;
+    font-size: 16px;
+}
+.menu-content:hover .menu-list-items{
+    display: block;
+    position: absolute;
+    top: 42.4px;
+    right: 0;
+    left: 0;
+}
+
+.menu-list-items{
+   display: none;
+   background-color: white !important;
+   width: 300px;
+}
+.tag-ctgr-item{
+    padding: 12px 20px;
+    border-bottom: whitesmoke;
+    display: flex;
+    position: relative;
+}
+.tag-ctgr-item a{
+    color: #444;
+}
+.sub-item{
+    display: none;
+    background-color: white;
+    width: 150px;
+    
+}
+.sub-item__txt{
+    padding: 12px 20px;
+    border-bottom: whitesmoke;
+}
+
+.tag-ctgr-item:hover{
+    background: #FCDAB0;
+}
+
+.sub-item__txt:hover{
+    background: #FCDAB0;
+}
+
+.tag-ctgr-item:hover .sub-item{
+    display: block;
+    position: absolute;
+    left: 301px;
+    top: 0px;
+}

@@ -1,1 +1,121 @@
-<p>detail-lirerature-book works!</p>
+<div class="wrap-detail-book">
+    <div class="detail-book-content">
+        <div class="detail-book-top">
+            <div class="detail-book-top-cl-1">
+                <div class="detail-book-top-img">
+                    <img src="{{ book?.img }}" width="285px" height="auto">
+                </div>
+            </div>   
+            <div class="detail-book-cl-2">
+                <div class="detail-book-top-name">
+                    <h2>{{book?.bookName}}</h2>
+                </div>
+                  
+                <div class="detail-book-top-price">
+                    <div class="detail-book-top-new-price">
+                        <span>{{book?.price * book?.sale}} đ</span>
+                        <div class="detail-book-top-discont">
+                            <span>-{{book?.sale * 100}}%</span>
+                        </div>
+                    </div>
+                    <div class="detail-book-top-old-price">
+                        <span>{{book?.price}} đ</span>
+                    </div>
+                </div>
+
+                <div class="detail-book-top-box">
+                    <div class="detail-book-top-box-row-1">
+                        <a href="#" class="btn-cart">Thêm giỏ hàng</a>
+                    </div>
+                    <div class="detail-book-top-box-row-2">
+                        <label for="qty">Số lượng:</label>
+                        <input type="text" name="qty" id="qty" maxlength="2" value="1" title="SL" class="input-count__text">      
+                        <a href="#" class="btn-buy">Chọn mua</a>
+                    </div>
+                </div>
+
+                <div class="detail-book-top-desriptions">
+                    <p>{{book?.desriptions}}</p>
+                </div>
+            </div> 
+            <div class="detail-book-cl-3">
+                <div class="detail-book-top-essential">
+                    <div class="list-essential">
+                        <div class="item-essential">
+                            <label>Tên Nhà Cung Cấp:</label>
+                            <span>Nhã Nam</span>
+                        </div>
+                        <div class="item-essential">
+                            <label>Hình thức:</label>
+                            <span> Bìa Mềm</span>
+                        </div>
+                        <div class="item-essential">
+                            <label>Tình trạng:</label>
+                            <span>Sắp có hàng</span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>  
+        <div class="clearfix"></div>  
+         
+        <div class="detail-book-info">   
+            <h2>Thông Tin Chi Tiết</h2>
+            <table class="data-table table-striped" id="product-attribute-specs-table">
+                <tbody>
+                        <tr class="first odd">
+                            <th class="label">Mã hàng</th>
+                            <td class="data last">{{book?.bookId}}</td>
+                        </tr>
+                        <tr class="even">
+                            <th class="label">Dự Kiến Có Hàng</th>
+                            <td class="data last">16-01-2020</td>
+                        </tr>
+                            <tr class="odd">
+                            <th class="label">Tên Nhà Cung Cấp</th>
+                            <td class="data last">{{supplier?.supplierName}}</td>
+                        </tr>
+                        <tr class="even">
+                            <th class="label">Tác giả</th>
+                            <td class="data last">{{author?.authorName}}</td>
+                        </tr>
+                        <tr class="odd">
+                            <th class="label">NXB</th>
+                            <td class="data last">{{publisher?.publisherName}}</td>
+                        </tr>
+                        <tr class="even">
+                            <th class="label">Năm XB</th>
+                            <td class="data last">2020</td>
+            
+                        <tr class="even">
+                            <th style="vertical-align: middle;" class="label">Sản phẩm hiển thị trong</th>
+                            <td class="last">
+                                <ul class="fhs_product_link">
+                                    <li><a style="font-size: 14px; color: #c00" href="ipm?fhs_campaign=INTERNAL_LINKING">IPM</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="last odd">
+                            <th style="vertical-align: middle;" class="label">Sản phẩm bán chạy nhất</th>
+                            <td class="last">
+                                <a style="font-size: 14px; color: #c00;" href="https://www.fahasa.com/sach-trong-nuoc/van-hoc-trong-nuoc/light-novel/sort-by/num_orders_month/sort-direction/asc.html">Top 100 sản phẩm Light Novel bán chạy của tháng</a>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="detail-book-intro">
+            <div class="detail-book-tag-content">
+                <h2>Giới thiệu nội dung</h2>
+                <div class="detail-book-intro-content">
+                    <p *ngFor="let item of ListBookInfo">
+                        {{item.contentIntro}}
+                    </p>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>

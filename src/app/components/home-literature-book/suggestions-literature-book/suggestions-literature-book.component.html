@@ -7,20 +7,20 @@
     </div>
     <div class="wrap">
         <div class="sgt-ltt-book-cotent">
-            <div class="list-sgt-books">
-                <div class="item-sgt-book" *ngFor="let item of listFakeItem">
+            <div class="list-books">
+                <div class="item-sgt-book" *ngFor="let item of ListBooks">
                     <div class="item-sgt-book__img">
-                        <img src="../../../../assets/Book/8935250700801.jpg" width="160px" height="auto">
+                        <img src="{{item?.img}}" width="160px" height="auto">
                     </div>
-                    <div class="tem-sgt-book__name">
-                        <a>sword art online</a>
+                    <div class="item-name">
+                        <a>{{item?.bookName}}</a>
                     </div>
-                    <div class="tem-sgt-book-price">
+                    <div class="item-sgt-book-price">
                         <div class="tem-sgt-book__new-price">
-                            <span>50.000đ</span>
+                            <span>{{item?.price * item?.sale}}đ</span>
                         </div>
                         <div class="tem-sgt-book__old-price">
-                            <span>70.000đ</span>
+                            <span>{{item?.price}}đ</span>
                         </div>
                     </div>   
                 </div>

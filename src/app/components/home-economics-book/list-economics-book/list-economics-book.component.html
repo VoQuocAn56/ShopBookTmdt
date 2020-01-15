@@ -1,1 +1,39 @@
-<p>list-economics-book works!</p>
+<div class="wrap-s-book">
+    <div class="menu-tag-category">
+        <app-menu-tag-category-economics></app-menu-tag-category-economics>
+    </div>
+    <div class="s-container">
+        <div class="category-literature">
+            <app-category-economics-book></app-category-economics-book>
+        </div>
+        <div class="s-book-content">
+            <div class="s-tittle">
+                <h3>Light novel</h3>
+            </div>
+            <div class="list-books">
+                <a class="s-item" *ngFor="let item of listFakeEconomics" (click)="OnGotoDetailBook()">
+                    <div class="item-img">
+                        <img src="../../../../assets/Book/8935250700801.jpg" width="160px" height="auto">
+                    </div>
+                    <div class="item-name">
+                        <a>sword art online</a>
+                    </div>
+                    <div class="item-price">
+                        <div class="item-new-price">
+                            <span>50.000đ</span>
+                        </div>
+                        <div class="item-old-price">
+                            <span>70.000đ</span>
+                        </div>
+                    </div>   
+                </a>
+            </div>   
+            <div class="clearfix"></div>
+            <div class="list-sgt-books">
+              <app-suggestions-economics-book></app-suggestions-economics-book>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,64 +1,60 @@
-<div class="menu">
-    <div class="menu-content">
-        <div class="menu-title">
+<div class="m-menu">
+    <div class="m-menu-content">
+        <div class="m-menu-title">
             <h3>Danh Mục Sản Phẩm</h3>
         </div>
-        <div class="menu-list-items">
-            <div class="item">
+        <div class="m-menu-list-items">
+            <div class="m-item">
                 <a>Sách văn học</a>
-                <div class="sub-item">
-                    <div class="sub-item__txt">
-                        <a>Tiểu thuyết</a>
-                    </div>
-                    <div class="sub-item__txt">
-                        <a>Light Novel</a>
-                    </div>
-                    <div class="sub-item__txt">
-                        <a>Ngôn tình</a>
+                <div class="m-sub-item">
+                    <div class="m-sub-item__txt" *ngFor="let item of ListLiteratureBook">
+                        <a>{{item.categoryName}}</a>
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="m-item">
                 <a>Sách kinh tế</a>
-                <div class="sub-item">
-                    <div class="sub-item__txt">
-                        <a>Quản trị</a>
-                    </div>
-                    <div class="sub-item__txt">
-                        <a>Marketing</a>
+                <div class="m-sub-item">
+                    <div class="m-sub-item__txt" *ngFor="let item of ListEconomicsBook">
+                        <a>{{item.categoryName}}</a>
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="m-item">
                 <a>Sách tâm lí</a>
             </div>
-            <div class="item">
+            <div class="m-item">
                 <a>Sách nuôi dạy con</a>
             </div>
-            <div class="item">
+            <div class="m-item" >
                 <a>Sách thiếu nhi</a>
+                <div class="m-sub-item">
+                    <div class="m-sub-item__txt" *ngFor="let item of ListChildBook">
+                        <a>{{item.categoryName}}</a>
+                    </div>
+                </div>
             </div>
-            <div class="item">
+            <div class="m-item">
                 <a>Sách giáo khoa</a>
-                <div class="sub-item">
-                    <div class="sub-item__txt">
+                <div class="m-sub-item">
+                    <div class="m-sub-item__txt">
                         <a>Cấp 1</a>
                     </div>
-                    <div class="sub-item__txt">
+                    <div class="m-sub-item__txt">
                         <a>Cấp 2</a>
                     </div>
-                    <div class="sub-item__txt">
+                    <div class="m-sub-item__txt">
                         <a>Cấp 3</a>
                     </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="m-item">
                 <a>Sách theo tác giả</a>
             </div>
-            <div class="item">
+            <div class="m-item">
                 <a>Sách theo nhà cung cấp</a>
             </div>
-            <div class="item">
+            <div class="m-item">
                 <a>Sách để cử</a>
             </div>
         </div>

@@ -1,7 +1,4 @@
-<div class="wrap-s-book">
-    <div class="menu-tag-category">
-        <app-menu-tag-category></app-menu-tag-category>
-    </div>
+<div class="wrap-s-book"> 
     <div class="s-container">
         <div class="category-literature">
             <app-category-literature-book></app-category-literature-book>
@@ -11,26 +8,26 @@
                 <h3>Light novel</h3>
             </div>
             <div class="list-books">
-                <a class="s-item" *ngFor="let item of listFakeEconomics" (click)="OnGotoDetailBook()">
+                <a class="s-item" *ngFor="let item of ListBooks" (click)="OnGotoDetailBook(item)">
                     <div class="item-img">
-                        <img src="../../../../assets/Book/8935250700801.jpg" width="160px" height="auto">
+                        <img src={{item.img}} width="160px" height="auto">
                     </div>
                     <div class="item-name">
-                        <a>sword art online</a>
+                        <a>{{item.bookName}}</a>
                     </div>
                     <div class="item-price">
                         <div class="item-new-price">
-                            <span>50.000đ</span>
+                            <span>{{item.price * item.sale}}</span>
                         </div>
                         <div class="item-old-price">
-                            <span>70.000đ</span>
+                            <span>{{item.price}}</span>
                         </div>
                     </div>   
                 </a>
             </div>   
             <div class="clearfix"></div>
             <div class="list-sgt-books">
-                <app-suggestions-literature-book></app-suggestions-literature-book>
+                <app-suggestions-literature-book [ListBooks] = "ListSuggestBook"></app-suggestions-literature-book>
             </div>
         </div>
     </div>
